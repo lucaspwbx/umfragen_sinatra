@@ -1,6 +1,9 @@
 require 'bundler'
 Bundler.require
 require './umfragen'
-Dir.glob('./{helpers, controllers, models}/*.rb').each { |file| require file }
+Dir.glob('./lib/models/*.rb').each do |file|
+  require file
+end
+Mongoid.load!('./config/mongoid.yml')
 
 run Umfragen
