@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
+gem 'sinatra', require: 'sinatra/base'
 gem 'slim'
 gem 'rack-test', require: 'rack/test'
 gem 'racksh'
@@ -13,3 +13,5 @@ gem 'sinatra-contrib'
 gem 'rspec'
 gem 'pry'
 gem 'pry-nav'
+gem 'json'
+gem 'factory_girl'
